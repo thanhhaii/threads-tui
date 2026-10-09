@@ -1,0 +1,32 @@
+{
+  "name": "threads-tui",
+  "version": "0.1.0",
+  "description": "Read Threads in the terminal through a headless Chrome session",
+  "type": "module",
+  "bin": {
+    "threads": "./bin/threads.mjs"
+  },
+  "scripts": {
+    "start": "tsx src/cli.tsx",
+    "probe": "tsx scripts/probe.ts",
+    "fixtures": "tsx scripts/make-fixtures.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "ink": "^8.0.0",
+    "playwright-core": "^1.63.0",
+    "react": "^19.3.0",
+    "sharp": "^0.35.5",
+    "tsx": "^4.23.15",
+    "wrap-ansi": "^10.0.2",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  }
+}
